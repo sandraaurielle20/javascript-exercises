@@ -11,13 +11,14 @@
 // function with four different sizes and log each result.
 
 // * The pricing chain from the previous exercise, provided again:
-const orderSize = 14;
-if (orderSize > 12) {
-  console.log("Large order, call the bakery ahead");
-} else if (orderSize > 6) {
-  console.log("Medium order, ready in an hour");
-} else {
-  console.log("Small order, walk right in");
+function getOrderMessage(orderSize) {
+  if (orderSize > 12) {
+    return "Large order, call the bakery ahead";
+  } else if (orderSize > 6) {
+    return "Medium order, ready in an hour";
+  } else {
+    return "Small order, walk right in";
+  }
 }
 
 
@@ -40,6 +41,10 @@ function double(n) {
 function shout(text) {
   return `${text.toUpperCase()}!`;
 }
+const doubleExpr = function(n) {
+  return n * 2;
+};
+const shoutArrow = (text) => `${text.toUpperCase()}!`;
 
 
 // TODO: Part four.
